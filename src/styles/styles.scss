@@ -33,14 +33,11 @@ body, input[type="text"], button {
 html, body { 
     height: 100%; 
     padding: 10px;
+    background-color: #bbecf5;
 }
 
 .search-component {
     margin: 10px;
-}
-
-.delete {
-    text-align: left;
 }
 
 .clear {
