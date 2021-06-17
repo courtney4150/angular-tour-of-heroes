@@ -2,21 +2,39 @@
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
         
-        <a routerLink="/detail/{{hero.id}}">
+        <button mat-raised-button color="accent" routerLink="/detail/{{hero.id}}" class="heroButton">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </button>
+        
+        <!--<a routerLink="/detail/{{hero.id}}">
             <span class="badge">{{hero.id}}</span> {{hero.name}} 
-        </a>
-        <button class="delete" title="delete hero"(click)="delete(hero)">x</button>
+        </a>-->
+        <button mat-raised-button color="accent" class="delete" title="delete hero"(click)="delete(hero)">x</button>
     </li>
     
 </ul>
 
-<div>
-    <label for="new-hero">Hero name: </label>
-    <input id="new-hero" #heroName />
+<div class="add-hero-input">
+    
+        <form class="hero-input">
+            <mat-form-field>
+                <mat-label>Hero name</mat-label>
+                <input matInput placeholder="Ex. Captain Marvel" id="new-hero" #heroName>
+            </mat-form-field>
+        </form>
+        <!--
+        <label for="new-hero">Hero name: </label>
+        <input id="new-hero" #heroName />
+        
+        -->
+
+    
+    
   
-    <!-- (click) passes input value to add() and then clears the input -->
-    <button class="add-button" (click)="add(heroName.value); heroName.value=''">
-      Add a new hero
+    
+    <button class="add-button" mat-raised-button color="accent" (click)="add(heroName.value); heroName.value=''">
+      Add hero
     </button>
+
   </div>
 

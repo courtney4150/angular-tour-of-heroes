@@ -1,4 +1,10 @@
 /* HeroDetailComponent's private CSS styles */
+
+h2 {
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 label {
     color: #435960;
     font-weight: bold;
@@ -7,10 +13,12 @@ input {
   font-size: 1em;
   padding: .5rem;
 }
+
 button {
   margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #eee;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -21,4 +29,8 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+.go-back {
+  margin-right: 10px;
 }

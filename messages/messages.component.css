@@ -1,13 +1,15 @@
 h2 {
-    color: #A80000;
+    color: #0a0a0a;
     font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
   }
   
   .clear {
     color: #333;
     background-color: #eee;
     margin-bottom: 12px;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 4px;
     font-size: 1rem;
   }
